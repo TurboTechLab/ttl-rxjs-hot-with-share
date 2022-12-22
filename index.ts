@@ -12,8 +12,8 @@ const source = interval(1000).pipe(
 
 //Note : Mark the comma between subscriptions
 setTimeout(
-  () => source.subscribe((v) => console.log('subscription 1: ', v)),
+  () => source.subscribe((v) => console.log('subscription1: ', v)),
   1500
 ),
-  source.subscribe((v) => console.log('subscription 2: ', v));
-//source.pipe(take(1)).subscribe((v) => console.log('subscription 3: ', v));
+  source.subscribe((v) => console.log('subscription2: ', v));
+//source.pipe(take(1)).subscribe((v) => console.log('subscription3: ', v));
